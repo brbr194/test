@@ -10,6 +10,7 @@ import com.br.entity.Params;
 import com.br.service.AdminService;
 import com.github.pagehelper.PageInfo;
 import com.wf.captcha.utils.CaptchaUtil;
+import io.swagger.annotations.Api;
 import org.apache.naming.factory.LookupFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,6 +23,7 @@ import java.util.List;
 @CrossOrigin
 @RestController
 @RequestMapping("/admin")
+@Api(value = "管理员接口", tags = "管理员")
 public class AdminController {
 
     private static final Logger log = LoggerFactory.getLogger(AdminController.class);
